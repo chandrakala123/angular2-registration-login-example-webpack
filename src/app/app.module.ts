@@ -10,9 +10,12 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
-  providers: [],
+  providers: [
+    {provide: 'googleTagManagerId',  useValue: 'GTM-WVZCGXR'}
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
